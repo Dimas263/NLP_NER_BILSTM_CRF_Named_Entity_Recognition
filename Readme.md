@@ -106,10 +106,10 @@ _________________________________________________________________
 # Model Output
 
 ```yaml
--rwxrwxrwx 1 dimas dimas 8.7K Jul  2 00:41 accuracy.png
--rwxrwxrwx 1 dimas dimas 9.5K Jul  2 00:41 loss.png
--rwxrwxrwx 1 dimas dimas 1.6M Jun 25 18:09 model.h5
--rwxrwxrwx 1 dimas dimas  15K Jun 25 18:05 model.png
--rwxrwxrwx 1 dimas dimas   60 Jun 25 18:14 tag_to_index.pickle
--rwxrwxrwx 1 dimas dimas  61K Jun 25 18:14 word_to_index.pickle
+- 8.7K Jul  2 00:41 accuracy.png
+- 9.5K Jul  2 00:41 loss.png
+- 1.6M Jun 25 18:09 model.h5
+- 15K  Jun 25 18:05 model.png
+- 60   Jun 25 18:14 tag_to_index.pickle
+- 61K  Jun 25 18:14 word_to_index.pickle
 ```
