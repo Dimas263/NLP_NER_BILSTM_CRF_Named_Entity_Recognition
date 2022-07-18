@@ -76,4 +76,4 @@ cancers        : disease disease
 ```
 
 ## Output
-## [Model.hdf5](output/uji 7)
+## [Model.hdf5](output/uji%207)
