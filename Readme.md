@@ -1,115 +1,79 @@
-# NLP - BILSTM-CRF Named-Entity_Recognition
+# NLP
+# Named Entity Recognition (NER) - BILSTM - CRF
 
-# Architecture
 
-<center><img src="model_bilstm_crf.png"></center>
+## <img src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/64/000000/external-manager-hotel-smashingstocks-flat-smashing-stocks-2.png"/> **`Slamet Riyanto S.Kom., M.M.S.I.`**
 
-# [Dataset](input/ner_dataset.csv)
+## <img src="https://img.icons8.com/external-fauzidea-flat-fauzidea/64/undefined/external-man-avatar-avatar-fauzidea-flat-fauzidea.png"/> **`Dimas Dwi Putra`**
 
-| Sentence #  | Word        | POS | Tag     |
-| ----------- | ----------- | --- | ------- |
-| Sentence: 0 | studies     | NNS | O       |
-| Sentence: 0 | on          | IN  | O       |
-| Sentence: 0 | magnesium   | NN  | O       |
-| Sentence: 0 | s           | NN  | O       |
-| Sentence: 0 | mechanism   | NN  | O       |
-| Sentence: 0 | of          | IN  | O       |
-| Sentence: 0 | action      | NN  | O       |
-| Sentence: 0 | in          | IN  | O       |
-| Sentence: 0 | digitalis   | NN  | plant   |
-| Sentence: 0 | induced     | VBD | O       |
-| Sentence: 0 | arrhythmias | NNS | disease |
+## Architecture
+<img src="NER-BILSTM-CRF%20Architecture.png" WIDTH="3900">
+
+## Dataset
+| Sentence #  | Word        | POS | Tag       |
+| ----------- | ----------- | --- | --------- |
+| Sentence: 0 | studies     | NNS | O         |
+| Sentence: 0 | on          | IN  | O         |
+| Sentence: 0 | magnesium   | NN  | O         |
+| Sentence: 0 | s           | NN  | O         |
+| Sentence: 0 | mechanism   | NN  | O         |
+| Sentence: 0 | of          | IN  | O         |
+| Sentence: 0 | action      | NN  | O         |
+| Sentence: 0 | in          | IN  | O         |
+| Sentence: 0 | digitalis   | NN  | B-plant   |
+| Sentence: 0 | induced     | VBD | O         |
+| Sentence: 0 | arrhythmias | NNS | B-disease |
 ...
 
-# Libraries
+## Eval
+| Entities     | precision | recall   | f1-score | support | excecution time | processor | ram  | model | batch size | epochs | embedding | Length | Uji |
+| ------------ | --------- | -------- | -------- | ------- | --------------- | --------- | ---- | ----- | ---------- | ------ | --------- | ------ | --- |
+| PAD          | 1,000000  | 1,000000 | 1,000000 | 131     | 2.27.31         | cpu       | high | 1     | 16         | 20     | 128       | 3000   | 6   |
+| Disease      | 0,660870  | 0,542857 | 0,596078 | 140     |                 |           |      |       |            |        |           |        |     |
+| Plant        | 0,861314  | 0,874074 | 0,867647 | 135     |                 |           |      |       |            |        |           |        |     |
+| micro avg    | 0,848564  | 0,800493 | 0,823828 | 406     |                 |           |      |       |            |        |           |        |     |
+| macro avg    | 0,840728  | 0,805644 | 0,821242 | 406     |                 |           |      |       |            |        |           |        |     |
+| weighted avg | 0,836944  | 0,800493 | 0,816708 | 406     |                 |           |      |       |            |        |           |        |     |
+| F-1 Scores   |           |          | 82,4%    |         |                 |           |      |       |            |        |           |        |     |
+| PAD          | 1,000000  | 1,000000 | 1,000000 | 131     | 4.49.57         | cpu       | high | 2     | 16         | 40     | 128       | 3000   | 7   |
+| Disease      | 0,774775  | 0,623188 | 0,690763 | 140     |                 |           |      |       |            |        |           |        |     |
+| Plant        | 0,892857  | 0,892857 | 0,892857 | 135     |                 |           |      |       |            |        |           |        |     |
+| micro avg    | 0,895288  | 0,836186 | 0,864728 | 406     |                 |           |      |       |            |        |           |        |     |
+| macro avg    | 0,889211  | 0,838682 | 0,861207 | 406     |                 |           |      |       |            |        |           |        |     |
+| weighted avg | 0,887332  | 0,836186 | 0,858986 | 406     |                 |           |      |       |            |        |           |        |     |
+| F-1 Scores   |           |          | 86,5%    |         |                 |           |      |       |            |        |           |        |     |
 
-```yaml
-tensorflow
-keras
-keras-contrib
-sklearn-crfsuite
-pickle
-seqeval
-pandas
-numpy
-matplotlib
-seaborn
-```
-# Config
-
-```yaml
-batch_size = 32 
-epochs = 10
-max_len = 150
-embedding = 50 
-```
-
-# Model Visualization
-
-![alt-text-1](output/accuracy.png) ![alt-text-2](output/loss.png)
-
-# Scores
-
-| Averages | Entities | Precision    | Recall       | F-1 Scores   |
-| -------- | -------- | ------------ | ------------ | ------------ |
-| Micro    | PAD      | 1            | 1            | 1            |
-| Micro    | O        | 0,9700065203 | 0,956698821  | 0,9633067127 |
-| Micro    | plant    | 0,9884940778 | 0,9884940778 | 0,9884940778 |
-| Micro    | disease  | 0,9884940778 | 0,9884940778 | 0,9884940778 |
-|          |          |              |              |              |
-| Macro    | PAD      | 1            | 1            | 1            |
-| Macro    | O        | 0,9700065203 | 0,956698821  | 0,9633067127 |
-| Macro    | plant    | 0,9001643335 | 0,9170404243 | 0,9074482884 |
-| Macro    | disease  | 0,9001643335 | 0,9170404243 | 0,9074482884 |
-|          |          |              |              |              |
-| Weighted | PAD      | 1            | 1            | 1            |
-| Weighted | O        | 0,9700065203 | 0,956698821  | 0,9633067127 |
-| Weighted | plant    | 0,9892060224 | 0,9884940778 | 0,988767089  |
-| Weighted | disease  | 0,9892060224 | 0,9884940778 | 0,988767089  |
-
-# Predict
-
+## Predict
 ```yaml
 Word           ||True ||Pred
 ==============================
+the            : O     O
+mutagen        : O     O
+sensitivity    : O     O
+assay          : O     O
+msa            : O     O
+a              : O     O
+phenotypic     : O     O
+marker         : O     O
+of             : O     O
+dna            : O     O
+damage         : O     O
+response       : O     O
+and            : O     O
+repair         : O     O
+capacity       : O     O
+has            : O     O
+been           : O     O
+consistently   : O     O
+shown          : O     O
+to             : O     O
+associate      : O     O
+with           : O     O
+risk           : O     O
 tobacco        : plant plant
 related        : O     O
 cancers        : disease disease
-in             : O     O
-madras         : O     O
-india          : O     O
 ```
 
-# Model Summary
-
-```yaml
-Model: "model_1"
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-input_1 (InputLayer)         (None, 150)               0         
-_________________________________________________________________
-embedding_1 (Embedding)      (None, 150, 50)           154550    
-_________________________________________________________________
-bidirectional_1 (Bidirection (None, 150, 100)          40400     
-_________________________________________________________________
-time_distributed_1 (TimeDist (None, 150, 50)           5050      
-_________________________________________________________________
-crf_1 (CRF)                  (None, 150, 4)            228       
-=================================================================
-Total params: 200,228
-Trainable params: 200,228
-Non-trainable params: 0
-_________________________________________________________________
-```
-
-# Model Output
-
-```yaml
-- 8.7K Jul  2 00:41 accuracy.png
-- 9.5K Jul  2 00:41 loss.png
-- 1.6M Jun 25 18:09 model.h5
-- 15K  Jun 25 18:05 model.png
-- 60   Jun 25 18:14 tag_to_index.pickle
-- 61K  Jun 25 18:14 word_to_index.pickle
-```
+## Output
+## [Model.hdf5](output/uji 7)

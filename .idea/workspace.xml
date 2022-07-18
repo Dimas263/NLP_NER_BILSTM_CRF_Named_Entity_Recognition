@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66102e47-9f9c-4c94-949a-8366568050d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BILSTM-CRF-NER.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BiLSTM-CRF.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/BiLSTM-CRF.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BiLSTM-CRF_Report.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dokumentasi.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Dokumentasi.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Preprocessing.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/BIO/BIO.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/BIO/enimex.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/BIO/final-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/BIO/stanford.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/data/annotated-dataset-plant-disease-corpus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/data/data_preprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/data/gold-standard-corpus.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/preprocess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/raw_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/_process_data/splitting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/excel_data/into_excel_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/excel_data/into_json_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/excel_data/labels.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/excel_data/ner_dataset.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/excel_data/ner_dataset.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/excel_data/ner_labels.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/excel_data/ner_tags.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/excel_data/nor_ent2id.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/final_data/dev.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/final_data/test.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/final_data/train.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/mid_data/dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/mid_data/labels.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/mid_data/nor_ent2id.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/mid_data/test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/mid_data/train.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/ner_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/ner_dataset.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/ori_data/gold-standard-corpus.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/raw_data/dev.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/raw_data/process.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/raw_data/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/raw_data/train.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_bilstm_crf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/accuracy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/loss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/model.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/model.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/tag_to_index.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/word_to_index.pickle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2C6whFN1GBjBzdgoJ7vQen86mwR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66102e47-9f9c-4c94-949a-8366568050d8" name="Changes" comment="" />
+      <created>1658136460024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658136460024</updated>
+      <workItem from="1658136461769" duration="603000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
