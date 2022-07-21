@@ -6,6 +6,9 @@
 
 ## <img src="https://img.icons8.com/external-fauzidea-flat-fauzidea/64/undefined/external-man-avatar-avatar-fauzidea-flat-fauzidea.png"/> **`Dimas Dwi Putra`**
 
+## Results
+<img src="front-end.png" width="1345">
+
 ## Architecture
 <img src="NER-BILSTM-CRF%20Architecture.png" WIDTH="3900">
 
@@ -24,9 +27,6 @@
 | Sentence: 0 | induced     | VBD | O         |
 | Sentence: 0 | arrhythmias | NNS | B-disease |
 ...
-
-## Results
-<img src="front-end.png" width="1345">
 
 ## Eval
 | Entities     | precision | recall   | f1-score | support | excecution time | processor | ram  | model | batch size | epochs | embedding | Length | Uji |
