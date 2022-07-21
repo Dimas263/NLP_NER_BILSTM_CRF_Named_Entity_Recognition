@@ -25,6 +25,9 @@
 | Sentence: 0 | arrhythmias | NNS | B-disease |
 ...
 
+## Results
+<img src="front-end.png" width="1345">
+
 ## Eval
 | Entities     | precision | recall   | f1-score | support | excecution time | processor | ram  | model | batch size | epochs | embedding | Length | Uji |
 | ------------ | --------- | -------- | -------- | ------- | --------------- | --------- | ---- | ----- | ---------- | ------ | --------- | ------ | --- |
