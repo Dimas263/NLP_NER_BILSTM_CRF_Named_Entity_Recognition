@@ -6,9 +6,6 @@
 
 ## <img src="https://img.icons8.com/external-fauzidea-flat-fauzidea/64/undefined/external-man-avatar-avatar-fauzidea-flat-fauzidea.png"/> **`Dimas Dwi Putra`**
 
-## Results
-<img src="front-end.png" width="1345">
-
 ## Architecture
 <img src="NER-BILSTM-CRF%20Architecture.png" WIDTH="3900">
 
@@ -31,13 +28,6 @@
 ## Eval
 | Entities     | precision | recall   | f1-score | support | excecution time | processor | ram  | model | batch size | epochs | embedding | Length | Uji |
 | ------------ | --------- | -------- | -------- | ------- | --------------- | --------- | ---- | ----- | ---------- | ------ | --------- | ------ | --- |
-| PAD          | 1,000000  | 1,000000 | 1,000000 | 131     | 2.27.31         | cpu       | high | 1     | 16         | 20     | 128       | 3000   | 6   |
-| Disease      | 0,660870  | 0,542857 | 0,596078 | 140     |                 |           |      |       |            |        |           |        |     |
-| Plant        | 0,861314  | 0,874074 | 0,867647 | 135     |                 |           |      |       |            |        |           |        |     |
-| micro avg    | 0,848564  | 0,800493 | 0,823828 | 406     |                 |           |      |       |            |        |           |        |     |
-| macro avg    | 0,840728  | 0,805644 | 0,821242 | 406     |                 |           |      |       |            |        |           |        |     |
-| weighted avg | 0,836944  | 0,800493 | 0,816708 | 406     |                 |           |      |       |            |        |           |        |     |
-| F-1 Scores   |           |          | 82,4%    |         |                 |           |      |       |            |        |           |        |     |
 | PAD          | 1,000000  | 1,000000 | 1,000000 | 131     | 4.49.57         | cpu       | high | 2     | 16         | 40     | 128       | 3000   | 7   |
 | Disease      | 0,774775  | 0,623188 | 0,690763 | 140     |                 |           |      |       |            |        |           |        |     |
 | Plant        | 0,892857  | 0,892857 | 0,892857 | 135     |                 |           |      |       |            |        |           |        |     |
@@ -79,26 +69,24 @@ cancers        : disease disease
 ```
 
 ## Output
-#### [Model.hdf5](output/uji%207)
+### Save model output as [.hdf5](output/)
 
 # **Other Content**
 
 ### **Websites Prediction**
-#### [Django Websites Prediction For NER dan RE](https://github.com/Dimas263/Django-Websites_NER_RE)
+#### [1. Django Websites Prediction For NER dan RE](https://github.com/Dimas263/Django-Websites_NER_RE)
 
-<br>
 
 ### **Named Entity Recognition (NER)**
-#### [NLP_NER_Dataset_Biomedical_Plant-Disease_Corpus](https://github.com/Dimas263/NLP_NER_Dataset_Biomedical_Plant-Disease_Corpus)
-#### [NLP_NER_CRF_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_CRF_Named_Entity_Recognition)
-#### [NLP_NER_BILSTM_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_BILSTM_Named_Entity_Recognition)
-#### [NLP_NER_BERT_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_BERT_Named_Entity_Recognition)
-#### [NLP_NER_BILSTM_CRF_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_BILSTM_CRF_Named_Entity_Recognition)
-#### [NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition)
+#### [1. NER Dataset Biomedical Plant-Disease Corpus](https://github.com/Dimas263/NLP_NER_Dataset_Biomedical_Plant-Disease_Corpus)
+#### [2. NER CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_CRF_Named_Entity_Recognition)
+#### [3. NER BiLSTM Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BILSTM_Named_Entity_Recognition)
+#### [4. NER BERT Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BERT_Named_Entity_Recognition)
+#### [5. NER BiLSTM CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BILSTM_CRF_Named_Entity_Recognition)
+#### [6. NER BERT BiLSTM CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition)
 
-<br>
 
 ### **Relation Extraction (NER)**
-#### [NLP_RE_Dataset_Biomedical_Plant-Disease_Corpus](https://github.com/Dimas263/NLP_RE_Dataset_Biomedical_Plant-Disease_Corpus)
-#### [NLP_RE_BERT_Relation_Extraction_Biomedical](https://github.com/Dimas263/NLP_RE_BERT_Relation_Extraction_Biomedical)
-#### [NLP_RE_BILSTM_CRF_Relation_Extraction_Biomedical](https://github.com/Dimas263/NLP_RE_BILSTM_CRF_Relation_Extraction_Biomedical)
+#### [1. RE Dataset Biomedical Plant-Disease Corpus](https://github.com/Dimas263/NLP_RE_Dataset_Biomedical_Plant-Disease_Corpus)
+#### [2. RE BERT Relation Extraction Biomedical](https://github.com/Dimas263/NLP_RE_BERT_Relation_Extraction_Biomedical)
+#### [3. RE BiLSTM CRF Relation Extraction Biomedical](https://github.com/Dimas263/NLP_RE_BILSTM_CRF_Relation_Extraction_Biomedical)
